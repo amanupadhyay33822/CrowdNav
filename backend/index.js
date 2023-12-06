@@ -28,7 +28,9 @@ const playlist = require("./routes/playlist");
 app.use("/api/v1",user)
 // app.use("/api/v1",song)
 // app.use("/api/v1",playlist)
-
+app.get("/",(req,res)={
+    res.json("hello");
+})
 app.listen(port, ()=> {
     console.log(`listening on ${port}`)
 })
